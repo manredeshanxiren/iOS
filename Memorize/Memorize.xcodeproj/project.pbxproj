@@ -35,14 +35,9 @@
 			path = Memorize;
 			sourceTree = "<group>";
 		};
-		D9395C9F2D7F31A80068A1B3 /* MemorizeTests */ = {
+		D97591142D9BA63D0020C4C5 /* Preview Content */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MemorizeTests;
-			sourceTree = "<group>";
-		};
-		D9395CA92D7F31A80068A1B3 /* MemorizeUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MemorizeUITests;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				D9395C8D2D7F31A70068A1B3 /* Memorize */,
-				D9395C9F2D7F31A80068A1B3 /* MemorizeTests */,
-				D9395CA92D7F31A80068A1B3 /* MemorizeUITests */,
+				D97591142D9BA63D0020C4C5 /* Preview Content */,
 				D9395C8C2D7F31A70068A1B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +103,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				D9395C8D2D7F31A70068A1B3 /* Memorize */,
+				D97591142D9BA63D0020C4C5 /* Preview Content */,
 			);
 			name = Memorize;
 			packageProductDependencies = (
@@ -130,9 +125,6 @@
 			dependencies = (
 				D9395C9E2D7F31A80068A1B3 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D9395C9F2D7F31A80068A1B3 /* MemorizeTests */,
-			);
 			name = MemorizeTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +144,6 @@
 			);
 			dependencies = (
 				D9395CA82D7F31A80068A1B3 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D9395CA92D7F31A80068A1B3 /* MemorizeUITests */,
 			);
 			name = MemorizeUITests;
 			packageProductDependencies = (
@@ -391,7 +380,7 @@
 				CODE_SIGN_ENTITLEMENTS = Memorize/Memorize.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 2Q4MG6A3M7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -430,7 +419,7 @@
 				CODE_SIGN_ENTITLEMENTS = Memorize/Memorize.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 2Q4MG6A3M7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
