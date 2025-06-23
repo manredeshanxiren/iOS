@@ -24,7 +24,6 @@ struct MemorizeGame<CardContent> {
     }
     
     func choose(_ card: Card) {
-        
     }
     
     mutating func shuffle() {
