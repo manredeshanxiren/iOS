@@ -17,6 +17,7 @@ struct EmojiMemoryGameView: View {
         VStack {
             ScrollView {
                 cards
+                    .animation(.default, value: viewModel.cards)
             }
             Button("洗牌") {
                 viewModel.shuffle()
@@ -27,10 +28,13 @@ struct EmojiMemoryGameView: View {
     
     private var cards: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 85), spacing: 0)], spacing: 0) {
-            ForEach(viewModel.cards.indices, id: \.self) { index in
-                CardView(viewModel.cards[index])
+            ForEach(viewModel.cards) { Card in
+                CardView(Card)
                     .aspectRatio(2/3, contentMode: .fit)
                     .padding(4)
+                    .onTapGesture {
+                        viewModel.choose(Card)
+                    }
             }
         }
         .foregroundColor(.blue)
@@ -60,6 +64,7 @@ private struct CardView: View {
             .opacity(card.isFaceUp ? 1 : 0)
             base.opacity(card.isFaceUp ? 0 : 1)
         }
+        .opacity(!card.isMatched || card.isFaceUp ? 1 : 0)
     }
 }
 
